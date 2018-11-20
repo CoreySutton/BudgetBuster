@@ -61,22 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContextService.cs" />
+    <Compile Include="Core\ContextService.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postupdate.cs" />
     <Compile Include="Entities\Income\cs_income_postupdate.cs" />
-    <Compile Include="PluginAction.cs" />
+    <Compile Include="Core\PluginAction.cs" />
     <Compile Include="Entities\Income\cs_income_postcreate.cs" />
-    <Compile Include="CrmPluginRegistrationAttribute.cs" />
-    <Compile Include="EarlyBound.cs" />
+    <Compile Include="Core\CrmPluginRegistrationAttribute.cs" />
+    <Compile Include="Core\EarlyBound.cs" />
     <Compile Include="Entities\Budget\Actions\CalculateExpenses.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postcreate.cs" />
     <Compile Include="Entities\Budget\Actions\CalculateIncomes.cs" />
     <Compile Include="Entities\Income\Helpers\IncomeRetriever.cs" />
     <Compile Include="Entities\Expenses\Helpers\ExpenseRetriever.cs" />
-    <Compile Include="EntityUpdateManager.cs" />
+    <Compile Include="Core\EntityUpdateManager.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\MathHelper.cs" />
-    <Compile Include="LocalContext.cs" />
+    <Compile Include="Core\LocalContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
