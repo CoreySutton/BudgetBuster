@@ -36,7 +36,10 @@ namespace CoreySutton.BudgetBuster.Plugins
 
         internal void Commit()
         {
-            _ctx.OrgService.Update(_entity);
+            if (_entity.Attributes.Count > 1)
+            {
+                _ctx.OrgService.Update(_entity);
+            }
         }
     }
 }
