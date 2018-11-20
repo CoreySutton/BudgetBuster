@@ -6,10 +6,8 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace CoreySutton.BudgetBuster.Plugins
 {
-    internal class ExpenseRetriever
+    internal class ExpenseRetriever : ContextService
     {
-        private readonly LocalContext ctx;
-
         private QueryExpression ValuesQuery(Guid budgetId) => new QueryExpression(cs_expense.EntityLogicalName)
         {
             ColumnSet = new ColumnSet(nameof(cs_expense.cs_Value)),
@@ -22,14 +20,11 @@ namespace CoreySutton.BudgetBuster.Plugins
             }
         };
 
-        public ExpenseRetriever(LocalContext ctx)
-        {
-            this.ctx = ctx;
-        }
-        
+        internal ExpenseRetriever(LocalContext ctx) : base(ctx) { }
+
         internal List<Money> GetValues(Guid budgetId)
         {
-            EntityCollection ec = ctx.orgService.RetrieveMultiple(ValuesQuery(budgetId));
+            EntityCollection ec = Ctx.OrgService.RetrieveMultiple(ValuesQuery(budgetId));
             return ec?.Entities?.Select(e => e.ToEntity<cs_expense>().cs_Value).ToList();
         }
     }
