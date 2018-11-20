@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{95f64c19-3be0-4463-8887-73f09d17b5cf}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="cs_name" select="1" icon="1" preview="1">
+        <row name="cs_income" id="cs_incomeid">
+          <cell name="cs_name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="cs_incomecategory" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="cs_value" width="100" />
+          <cell name="cs_period" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cs_income">
+          <attribute name="cs_incomeid" />
+          <attribute name="cs_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cs_value" />
+          <attribute name="cs_period" />
+          <attribute name="cs_incomecategory" />
+          <order attribute="cs_name" descending="false" />
+          <order attribute="createdon" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Income Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

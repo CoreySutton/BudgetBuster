@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{eb756e2a-4e76-45d4-b1d0-84cf79f5f44a}</formid>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{12b5e012-d481-465b-853f-dea4b80fc91b}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{21135962-80fe-4acf-988f-03f954bcb6df}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d9777ba1-9777-9046-ed7a-039a129825b9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Budget" languagecode="1033" />
+                        </labels>
+                        <control id="cs_budget" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cs_budget" disabled="true" uniqueid="{7ce34a38-3c6e-93c5-5a42-c2d154a4cb15}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{CB4D9B6C-F51E-43DB-B6AC-74F4C1E3E7FD}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{03394a49-b8ef-4069-b3ec-bb439e3618d8}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{42304cec-d43c-a0dd-cc14-9a0d9862d62c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c7b735e-c9c5-1856-d9e1-61dc99916c9e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Expense Category" languagecode="1033" />
+                        </labels>
+                        <control id="cs_expensecategory" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cs_expensecategory" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{41acd3a3-a888-4439-8c8f-f0b385b0745c}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d80230c3-9e64-0404-8ccb-43cdd7c942ed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Value" languagecode="1033" />
+                        </labels>
+                        <control id="cs_value" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_value" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8581e9d4-4c1d-83e7-315c-a14ab2db5446}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period" languagecode="1033" />
+                        </labels>
+                        <control id="cs_period" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cs_period" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

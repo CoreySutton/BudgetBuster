@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{c0a150b4-8fa9-4216-a625-19a29a91b314}</formid>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{5cef52c3-336a-4b1c-96e3-eadc23393ee4}" name="{5cef52c3-336a-4b1c-96e3-eadc23393ee4}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8d7dc1b5-70c4-4121-ac65-d40269d4a2d2}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" uniqueid="{32b2b1b3-637b-1b8a-271a-47734c4e96ec}" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{46cc6013-a1dc-2e25-7cc3-71101cd0adc4}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Expenses" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_2" showlabel="false" showbar="false" locklevel="0" id="{364ba6bd-d103-7cb8-9781-0d79dcc5eacd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                  <labels>
+                    <label description="Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4474c79d-1212-9079-dc36-d2cea8352a05}" showlabel="true" colspan="1" rowspan="5" auto="true">
+                        <labels>
+                          <label description="Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="Expenses" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{2b857d06-b5c6-cdd0-3d13-8c17901cbd41}">
+                          <parameters>
+                            <ViewId>{F8FA7EF0-EB80-4768-BCCF-14BAE2FD1B15}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cs_cs_budget_cs_expense_Budget</RelationshipName>
+                            <TargetEntityType>cs_expense</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{F8FA7EF0-EB80-4768-BCCF-14BAE2FD1B15}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>30</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{4761b66e-7d41-db7d-bbec-8635c5eee161}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Income" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{8e0a6eb3-9058-16a2-e562-2308bb54ea5b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                  <labels>
+                    <label description="Income" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{17bb8651-e048-59cb-4566-c69d77957c15}" showlabel="true" colspan="1" auto="true" rowspan="5">
+                        <labels>
+                          <label description="Incomes" languagecode="1033" />
+                        </labels>
+                        <control id="Incomes" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{537e31ce-3800-d467-15b7-04a1233e9dbe}">
+                          <parameters>
+                            <ViewId>{EE309A69-54D4-42F2-8CD9-8152F0A08227}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cs_cs_budget_cs_income_Budget</RelationshipName>
+                            <TargetEntityType>cs_income</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{EE309A69-54D4-42F2-8CD9-8152F0A08227}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>30</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2a53c764-ec96-4e97-b752-df06514c3356}" columns="111">
+        <rows>
+          <row>
+            <cell id="{fcdbbf4e-2e71-49ac-abc7-4a27116b6fd2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6c520e82-8868-ee63-9dac-9c310cc22033}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{87036d97-5a1c-4440-2c08-94d6e72a7282}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="cs_cs_budget_cs_expense_Budget" Sequence="10000" Area="Info" Id="nav_cs_cs_budget_cs_expense_Budget" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Expenses" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cs_cs_budget_cs_income_Budget" Sequence="10000" Area="Info" Id="nav_cs_cs_budget_cs_income_Budget" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Incomes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

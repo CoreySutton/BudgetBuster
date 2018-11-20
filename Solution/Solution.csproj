@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C72B36FC-BDDE-47DB-8693-F94ACE9B8051}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Solution</RootNamespace>
+    <AssemblyName>Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\coretools\CrmSvcUtil.exe" />
+    <Content Include="bin\coretools\CrmSvcUtil.xml" />
+    <Content Include="bin\coretools\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="bin\coretools\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="bin\coretools\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Tooling.Connector.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Tooling.CrmConnectControl.dll" />
+    <Content Include="bin\coretools\Microsoft.Xrm.Tooling.Ui.Styles.dll" />
+    <Content Include="bin\coretools\Other Redistributable.txt" />
+    <Content Include="bin\coretools\SolutionPackager.exe" />
+    <Content Include="package\AppModuleSiteMaps\cs_BudgetBlaster\AppModuleSiteMap.xml" />
+    <Content Include="package\AppModules\cs_BudgetBlaster\AppModule.xml" />
+    <Content Include="package\Entities\cs_budget\Entity.xml" />
+    <Content Include="package\Entities\cs_budget\FormXml\card\{c8ce92a7-1c81-4aad-8c91-5f1504e05e80}.xml" />
+    <Content Include="package\Entities\cs_budget\FormXml\main\{c0a150b4-8fa9-4216-a625-19a29a91b314}.xml" />
+    <Content Include="package\Entities\cs_budget\FormXml\quick\{bbdce39a-925e-41e6-98ac-a5133e48c1e2}.xml" />
+    <Content Include="package\Entities\cs_budget\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{22f6074b-7267-4a21-a88d-aa966f7a84aa}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{2db3fc2a-5aec-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{3aadae00-335a-4fcb-8339-91ff38940c6b}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{626d3704-714a-4e9a-9214-35f1b1769a44}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{a472fc74-fb53-48fc-8167-b9893be523de}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{cb4d9b6c-f51e-43db-b6ac-74f4c1e3e7fd}.xml" />
+    <Content Include="package\Entities\cs_budget\SavedQueries\{f0182e88-58b9-4443-8473-5299170cb872}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\Entity.xml" />
+    <Content Include="package\Entities\cs_expensecategory\FormXml\card\{eb6d9190-d32f-49f1-bf64-6573e732e5df}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\FormXml\main\{b8f70af4-3401-4884-b148-1e70943e182f}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\FormXml\quickCreate\{c0790353-9f90-4cc8-abba-f724a934262e}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\FormXml\quick\{b412639d-bdea-4953-8d53-d2cfde2c1e49}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{3e599b31-69cf-49f2-86a6-af44e0135a73}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{54fff1f6-5bec-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{af79c824-d15e-4544-8824-d2bf4a6414e8}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{da8437ee-803f-4c01-a422-744dcaa4b78d}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{db6795a1-f090-44cf-80ea-3437864c8147}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{e5c7e241-84a1-47d6-8a71-ae30595ca61d}.xml" />
+    <Content Include="package\Entities\cs_expensecategory\SavedQueries\{edb13f2f-75fa-4e62-85bc-3217d58051b4}.xml" />
+    <Content Include="package\Entities\cs_expense\Entity.xml" />
+    <Content Include="package\Entities\cs_expense\FormXml\card\{e5b7ee1d-811d-44a9-9cd1-2f58a99acbc9}.xml" />
+    <Content Include="package\Entities\cs_expense\FormXml\main\{ded9cd97-956e-4bd2-b4d5-907629b9512c}.xml" />
+    <Content Include="package\Entities\cs_expense\FormXml\quickCreate\{eb756e2a-4e76-45d4-b1d0-84cf79f5f44a}.xml" />
+    <Content Include="package\Entities\cs_expense\FormXml\quick\{2b8ff75b-222c-4ecc-ab98-ac2c46f44c05}.xml" />
+    <Content Include="package\Entities\cs_expense\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{31095f8f-a372-4524-984b-52ece446d16e}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{a215b449-5aec-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{ab9054f2-ad99-40da-a992-8860725d4115}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{b5099095-f95a-4d29-9436-28a8adc41d15}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{c260940e-9d1b-443a-8037-e99a022c626c}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{f8a578bd-b3d6-4088-b0f8-d29b9b0164d1}.xml" />
+    <Content Include="package\Entities\cs_expense\SavedQueries\{f8fa7ef0-eb80-4768-bccf-14bae2fd1b15}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\Entity.xml" />
+    <Content Include="package\Entities\cs_incomecategory\FormXml\card\{c01d56cd-165d-44d0-bff9-ce18a35221ac}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\FormXml\main\{e7bd57f5-ed95-46c8-8783-6aff7cc44518}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\FormXml\quickCreate\{c5bf0c42-35f1-4b70-ad08-5e276d7ee953}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\FormXml\quick\{019cca59-d06f-424d-8b0f-79a77215bc72}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{189fa0b8-f459-42f9-868f-565a3a8ee555}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{1b2e74da-c34b-4090-a94b-a14f9593e86d}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{83f18888-b6a0-4a90-a489-c6e2a6c24608}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{9b3ffe8b-b9c1-4213-a83a-18fb3c067ca8}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{aba038f5-7068-4935-af0a-5fc0dfe7017e}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{d1481062-5cec-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\Entities\cs_incomecategory\SavedQueries\{d5473458-402b-46f0-ab9a-f87923b6436f}.xml" />
+    <Content Include="package\Entities\cs_income\Entity.xml" />
+    <Content Include="package\Entities\cs_income\FormXml\card\{d99cb4cf-8e0f-4815-a297-bf1623208cd1}.xml" />
+    <Content Include="package\Entities\cs_income\FormXml\main\{212d8251-aa6f-4c18-989d-1b73724d6eb7}.xml" />
+    <Content Include="package\Entities\cs_income\FormXml\quickCreate\{ecda9658-db04-49e8-b876-f439dff8d98e}.xml" />
+    <Content Include="package\Entities\cs_income\FormXml\quick\{3aa3237e-a165-4c7d-bb8b-eb1dbdc5926e}.xml" />
+    <Content Include="package\Entities\cs_income\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{4e46bc57-4da4-4235-844a-bbb5e9bf8032}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{516e39c3-54b7-4067-a612-71ba6115001f}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{95f64c19-3be0-4463-8887-73f09d17b5cf}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{c203a7e6-3fc2-45e0-a0d1-f0e27b89859e}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{d1548fa8-915c-4427-96ac-2c780c3d9f6b}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{da852876-5aec-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\Entities\cs_income\SavedQueries\{ee309a69-54d4-42f2-8cd9-8152f0a08227}.xml" />
+    <Content Include="package\OptionSets\cs_period.xml" />
+    <Content Include="package\Other\Customizations.xml" />
+    <Content Include="package\Other\Relationships.xml" />
+    <Content Include="package\Other\Relationships\BusinessUnit.xml" />
+    <Content Include="package\Other\Relationships\cs_budget.xml" />
+    <Content Include="package\Other\Relationships\cs_expensecategory.xml" />
+    <Content Include="package\Other\Relationships\cs_incomecategory.xml" />
+    <Content Include="package\Other\Relationships\Owner.xml" />
+    <Content Include="package\Other\Relationships\SystemUser.xml" />
+    <Content Include="package\Other\Relationships\Team.xml" />
+    <Content Include="package\Other\Relationships\TransactionCurrency.xml" />
+    <Content Include="package\Other\Solution.xml" />
+    <Content Include="package\Roles\Budget Blaster.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\coretools\CrmSvcUtil.exe.config" />
+    <None Include="bin\coretools\LicenseTerms.docx" />
+    <None Include="packages.config" />
+    <None Include="spkl.json" />
+    <None Include="spkl\pack+import.bat" />
+    <None Include="spkl\unpack.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    {
+      "profile": "default,debug",
+      "assemblypath": "bin\\Debug"
+    }
+  ],
+  "earlyboundtypes": [
+    {
+      "entities": "cs_budget,cs_income,cs_incomecategory,cs_expense,cs_expensecategory",
+      "actions": "",
+      "generateOptionsetEnums": true,
+      "generateGlobalOptionsets": true,
+      "generateStateEnums": true,
+      "filename": "EarlyBound.cs",
+      "classNamespace": "CoreySutton.BudgetBuster.Plugins",
+      "serviceContextName": "XrmSvc",
+      "oneTypePerFile": false
+    }
+  ]
+}

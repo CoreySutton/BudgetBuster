@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{31095f8f-a372-4524-984b-52ece446d16e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cs_name" select="1" icon="1" preview="1">
+        <row name="result" id="cs_expenseid">
+          <cell name="cs_name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="cs_expensecategory" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="cs_value" width="100" />
+          <cell name="cs_period" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cs_expense">
+          <attribute name="cs_expenseid" />
+          <attribute name="cs_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="cs_value" />
+          <attribute name="cs_period" />
+          <attribute name="cs_expensecategory" />
+          <order attribute="cs_name" descending="false" />
+          <order attribute="createdon" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Expenses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

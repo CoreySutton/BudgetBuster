@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>cs_BudgetBlaster</UniqueName>
+  <IntroducedVersion>0.1.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="cs_BudgetBlaster" />
+    <AppModuleComponent type="1" schemaName="cs_budget" />
+    <AppModuleComponent type="1" schemaName="cs_expense" />
+    <AppModuleComponent type="1" schemaName="cs_expensecategory" />
+    <AppModuleComponent type="1" schemaName="expiredprocess" />
+    <AppModuleComponent type="1" schemaName="cs_income" />
+    <AppModuleComponent type="1" schemaName="cs_incomecategory" />
+    <AppModuleComponent type="1" schemaName="knowledgearticle" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Budget Blaster" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

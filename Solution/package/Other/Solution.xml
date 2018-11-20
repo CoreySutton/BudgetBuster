@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>BudgetBlaster</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Budget Blaster" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>0.1.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>coreysutton</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Corey Sutton" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>cs</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>71764</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cs_budget" behavior="0" />
+      <RootComponent type="1" schemaName="cs_expense" behavior="0" />
+      <RootComponent type="1" schemaName="cs_expensecategory" behavior="0" />
+      <RootComponent type="1" schemaName="cs_income" behavior="0" />
+      <RootComponent type="1" schemaName="cs_incomecategory" behavior="0" />
+      <RootComponent type="9" schemaName="cs_period" behavior="0" />
+      <RootComponent type="20" id="{112ae663-6bec-e811-a975-000d3ad1c0d2}" behavior="0" />
+      <RootComponent type="60" id="{212d8251-aa6f-4c18-989d-1b73724d6eb7}" behavior="0" />
+      <RootComponent type="60" id="{b8f70af4-3401-4884-b148-1e70943e182f}" behavior="0" />
+      <RootComponent type="60" id="{c0790353-9f90-4cc8-abba-f724a934262e}" behavior="0" />
+      <RootComponent type="60" id="{c0a150b4-8fa9-4216-a625-19a29a91b314}" behavior="0" />
+      <RootComponent type="60" id="{c5bf0c42-35f1-4b70-ad08-5e276d7ee953}" behavior="0" />
+      <RootComponent type="60" id="{ded9cd97-956e-4bd2-b4d5-907629b9512c}" behavior="0" />
+      <RootComponent type="60" id="{e7bd57f5-ed95-46c8-8783-6aff7cc44518}" behavior="0" />
+      <RootComponent type="60" id="{eb756e2a-4e76-45d4-b1d0-84cf79f5f44a}" behavior="0" />
+      <RootComponent type="60" id="{ecda9658-db04-49e8-b876-f439dff8d98e}" behavior="0" />
+      <RootComponent type="62" schemaName="cs_BudgetBlaster" behavior="0" />
+      <RootComponent type="80" schemaName="cs_BudgetBlaster" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="1" type="80" schemaName="cs_BudgetBlaster" displayName="Budget Blaster" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
