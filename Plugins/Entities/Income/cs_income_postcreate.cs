@@ -12,7 +12,9 @@ namespace CoreySutton.BudgetBuster.Plugins
         stepName: "cs_income_postcreate",
         executionOrder: 1,
         isolationModel: IsolationModeEnum.Sandbox,
-        Description = "Post create events on cs_income")]
+        Description = "Post create events on cs_income",
+        Id = "239d3d7b-15ed-e811-a975-000d3ad1c0d2"
+    )]
     public class cs_income_postcreate : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)

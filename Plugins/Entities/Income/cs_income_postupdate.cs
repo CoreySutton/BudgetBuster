@@ -14,7 +14,9 @@ namespace CoreySutton.BudgetBuster.Plugins
         isolationModel: IsolationModeEnum.Sandbox,
         Description = "Post update events on cs_income",
         Image1Name = "Post",
-        Image1Attributes = "cs_budget")]
+        Image1Attributes = "cs_budget",
+        Id = "af2a4f7a-15ed-e811-a96c-000d3ad1c598"
+    )]
     public class cs_income_postupdate : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)
