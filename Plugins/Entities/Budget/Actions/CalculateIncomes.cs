@@ -3,9 +3,9 @@ using Microsoft.Xrm.Sdk;
 
 namespace CoreySutton.BudgetBuster.Plugins
 {
-    internal class BudgetIncomesCalculator : PluginAction<cs_budget>
+    internal class CalculateIncomes : PluginAction<cs_budget>
     {
-        internal BudgetIncomesCalculator(LocalContext ctx) : base(ctx) { }
+        internal CalculateIncomes(LocalContext ctx) : base(ctx) { }
 
         internal override void Execute(cs_budget updateBudget)
         {

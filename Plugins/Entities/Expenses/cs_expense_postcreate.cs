@@ -22,7 +22,7 @@ namespace CoreySutton.BudgetBuster.Plugins
             cs_expense targetExpense = ImageHelper.GetTarget<cs_expense>(ctx.Context);
 
             var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, targetExpense.cs_Budget.Id);
-            budgetUpdateManager.RunActions(new BudgetExpensesCalculator(ctx));
+            budgetUpdateManager.RunActions(new CalculateExpenses(ctx));
             budgetUpdateManager.Commit();
         }
     }

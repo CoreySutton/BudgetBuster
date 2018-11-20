@@ -61,19 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Budget\CalculateExpenses.cs" />
-    <Compile Include="Entities\ContextService.cs" />
+    <Compile Include="ContextService.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postupdate.cs" />
     <Compile Include="Entities\Income\cs_income_postupdate.cs" />
-    <Compile Include="Entities\PluginAction.cs" />
+    <Compile Include="PluginAction.cs" />
     <Compile Include="Entities\Income\cs_income_postcreate.cs" />
     <Compile Include="CrmPluginRegistrationAttribute.cs" />
     <Compile Include="EarlyBound.cs" />
-    <Compile Include="Entities\Budget\BudgetExpensesCalculator.cs" />
+    <Compile Include="Entities\Budget\Actions\CalculateExpenses.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postcreate.cs" />
-    <Compile Include="Entities\Budget\BudgetIncomesCalculator.cs" />
-    <Compile Include="Entities\Income\IncomeRetriever.cs" />
-    <Compile Include="Entities\Expenses\ExpenseRetriever.cs" />
+    <Compile Include="Entities\Budget\Actions\CalculateIncomes.cs" />
+    <Compile Include="Entities\Income\Helpers\IncomeRetriever.cs" />
+    <Compile Include="Entities\Expenses\Helpers\ExpenseRetriever.cs" />
     <Compile Include="EntityUpdateManager.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\MathHelper.cs" />
@@ -106,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+    <Folder Include="Entities\Budget\Helpers\" />
+    <Folder Include="Entities\Expenses\Actions\" />
+    <Folder Include="Entities\Income\Actions\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
