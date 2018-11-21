@@ -96,6 +96,11 @@
       <RootComponent type="60" id="{ecda9658-db04-49e8-b876-f439dff8d98e}" behavior="0" />
       <RootComponent type="62" schemaName="cs_BudgetBlaster" behavior="0" />
       <RootComponent type="80" schemaName="cs_BudgetBlaster" behavior="0" />
+      <RootComponent type="91" id="{c7b29276-15ed-e811-a96c-000d3ad1c3af}" schemaName="CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" behavior="0" />
+      <RootComponent type="92" id="{031e9c7b-15ed-e811-a96a-000d3ad1c715}" behavior="0" />
+      <RootComponent type="92" id="{1c71de78-15ed-e811-a96d-000d3ad1c79c}" behavior="0" />
+      <RootComponent type="92" id="{239d3d7b-15ed-e811-a975-000d3ad1c0d2}" behavior="0" />
+      <RootComponent type="92" id="{af2a4f7a-15ed-e811-a96c-000d3ad1c598}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>

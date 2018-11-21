@@ -27,6 +27,30 @@
                         <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" uniqueid="{32b2b1b3-637b-1b8a-271a-47734c4e96ec}" disabled="false" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{38930236-2a45-c664-19d4-1a1cb99be87b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Incomes" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalincomes" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomes" disabled="true" uniqueid="{aad3aa44-0c7c-dbd1-82e0-793d1e1d8948}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3310ebc9-130a-6858-381a-2e9764d36274}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpenses" disabled="true" uniqueid="{6de098eb-982c-c7b1-34d0-8a87bee0a225}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ae239a7-7d07-71ee-6967-c079562e7ba6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailable" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailable" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -45,6 +69,14 @@
                     <label description="Expenses" languagecode="1033" />
                   </labels>
                   <rows>
+                    <row>
+                      <cell id="{86074385-64d0-db80-8959-9134c9350d27}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpenses" disabled="true" uniqueid="{17c547c0-2556-574c-83be-04d98643e94a}" />
+                      </cell>
+                    </row>
                     <row>
                       <cell id="{4474c79d-1212-9079-dc36-d2cea8352a05}" showlabel="true" colspan="1" rowspan="5" auto="true">
                         <labels>
@@ -93,6 +125,14 @@
                     <label description="Income" languagecode="1033" />
                   </labels>
                   <rows>
+                    <row>
+                      <cell id="{e79b389d-4a19-192d-deee-a8de22737ad2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Incomes" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalincomes" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomes" disabled="true" uniqueid="{63be2c2e-d786-2e72-ae38-5387e5b0cebc}" />
+                      </cell>
+                    </row>
                     <row>
                       <cell id="{17bb8651-e048-59cb-4566-c69d77957c15}" showlabel="true" colspan="1" auto="true" rowspan="5">
                         <labels>

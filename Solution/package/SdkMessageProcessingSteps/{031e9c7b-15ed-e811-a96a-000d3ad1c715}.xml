@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="cs_expense_postcreate" SdkMessageProcessingStepId="{031e9c7b-15ed-e811-a96a-000d3ad1c715}">
+  <PluginTypeName>CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00</PluginTypeName>
+  <PluginTypeId>021e9c7b-15ed-e811-a96a-000d3ad1c715</PluginTypeId>
+  <PrimaryEntity>cs_expense</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Post create events on cs_expense</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{9ebdbb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

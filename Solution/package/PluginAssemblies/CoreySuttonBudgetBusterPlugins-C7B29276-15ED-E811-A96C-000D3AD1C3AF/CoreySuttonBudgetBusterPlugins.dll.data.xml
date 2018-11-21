@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" PluginAssemblyId="c7b29276-15ed-e811-a96c-000d3ad1c3af" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/CoreySuttonBudgetBusterPlugins-C7B29276-15ED-E811-A96C-000D3AD1C3AF/CoreySuttonBudgetBusterPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" PluginTypeId="021e9c7b-15ed-e811-a96a-000d3ad1c715" Name="CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate">
+      <FriendlyName>CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" PluginTypeId="c9b29276-15ed-e811-a96c-000d3ad1c3af" Name="CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate">
+      <FriendlyName>CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CoreySutton.BudgetBuster.Plugins.cs_income_postcreate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" PluginTypeId="cbb29276-15ed-e811-a96c-000d3ad1c3af" Name="CoreySutton.BudgetBuster.Plugins.cs_income_postcreate">
+      <FriendlyName>CoreySutton.BudgetBuster.Plugins.cs_income_postcreate</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="CoreySutton.BudgetBuster.Plugins.cs_income_postupdate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" PluginTypeId="cab29276-15ed-e811-a96c-000d3ad1c3af" Name="CoreySutton.BudgetBuster.Plugins.cs_income_postupdate">
+      <FriendlyName>CoreySutton.BudgetBuster.Plugins.cs_income_postupdate</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

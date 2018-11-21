@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="cs_income_postcreate" SdkMessageProcessingStepId="{af2a4f7a-15ed-e811-a96c-000d3ad1c598}">
+  <PluginTypeName>CoreySutton.BudgetBuster.Plugins.cs_income_postupdate, CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00</PluginTypeName>
+  <PluginTypeId>cab29276-15ed-e811-a96c-000d3ad1c3af</PluginTypeId>
+  <PrimaryEntity>cs_income</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>Post update events on cs_income</Description>
+  <FilteringAttributes>cs_value</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{20bebb1b-ea3e-db11-86a7-000a3a5473e8}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="Post">
+      <SdkMessageProcessingStepImageId>{385be614-21ed-e811-a975-000d3ad1c0d2}</SdkMessageProcessingStepImageId>
+      <Attributes>cs_budget</Attributes>
+      <EntityAlias>Post</EntityAlias>
+      <ImageType>1</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>
