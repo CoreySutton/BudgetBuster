@@ -19,12 +19,19 @@ namespace CoreySutton.BudgetBuster.Plugins
     {
         public void Execute(IServiceProvider serviceProvider)
         {
-            LocalContext ctx = new LocalContext(serviceProvider);
-            cs_income targetIncome = ImageHelper.GetTarget<cs_income>(ctx.Context);
+            try
+            {
+                LocalContext ctx = new LocalContext(serviceProvider);
+                cs_income targetIncome = ImageHelper.GetTarget<cs_income>(ctx.Context);
 
-            var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, targetIncome.cs_Budget.Id);
-            budgetUpdateManager.RunActions(new CalculateIncomes(ctx));
-            budgetUpdateManager.Commit();
+                var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, targetIncome.cs_Budget.Id);
+                budgetUpdateManager.RunActions(new CalculateIncomes(ctx));
+                budgetUpdateManager.Commit();
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidPluginExecutionException(ex.Message, ex);
+            }
         }
     }
 }

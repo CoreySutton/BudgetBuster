@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\ContextService.cs" />
+    <Compile Include="Core\Tracer.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postupdate.cs" />
     <Compile Include="Entities\Income\cs_income_postupdate.cs" />
     <Compile Include="Core\PluginAction.cs" />

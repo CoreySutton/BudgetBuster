@@ -1,0 +1,108 @@
+12:47:46 PM	Deploying Plugins
+12:47:46 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+12:47:46 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+12:47:46 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+12:47:46 PM	4 plugin(s) found!
+12:47:48 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+12:47:48 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+12:47:49 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+12:47:50 PM	Updating Step 'cs_expense_postupdate'
+12:47:51 PM	Updating Image 'Post'
+12:47:51 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+12:47:52 PM	Updating Step 'cs_income_postcreate'
+12:47:52 PM	Updating Image 'Post'
+12:47:52 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+12:47:53 PM	Updating Step 'cs_income_postcreate'
+12:47:53 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+12:47:54 PM	Updating Step 'cs_expense_postcreate'
+12:47:54 PM	Processed 1 config(s)
+12:56:37 PM	Deploying Plugins
+12:56:38 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+12:56:38 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+12:56:38 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+12:56:38 PM	4 plugin(s) found!
+12:56:40 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+12:56:40 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+12:56:41 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+12:56:41 PM	Updating Step 'cs_expense_postupdate'
+12:56:42 PM	Updating Image 'Post'
+12:56:42 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+12:56:43 PM	Updating Step 'cs_income_postcreate'
+12:56:43 PM	Updating Image 'Post'
+12:56:43 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+12:56:44 PM	Updating Step 'cs_income_postcreate'
+12:56:45 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+12:56:45 PM	Updating Step 'cs_expense_postcreate'
+12:56:46 PM	Processed 1 config(s)
+12:59:03 PM	Deploying Plugins
+12:59:03 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+12:59:03 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+12:59:03 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+12:59:03 PM	4 plugin(s) found!
+12:59:05 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+12:59:05 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+12:59:06 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+12:59:07 PM	Updating Step 'cs_expense_postupdate'
+12:59:07 PM	Updating Image 'Post'
+12:59:07 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+12:59:08 PM	Updating Step 'cs_income_postcreate'
+12:59:08 PM	Updating Image 'Post'
+12:59:08 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+12:59:09 PM	Updating Step 'cs_income_postcreate'
+12:59:09 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+12:59:10 PM	Updating Step 'cs_expense_postcreate'
+12:59:10 PM	Processed 1 config(s)
+1:01:39 PM	Deploying Plugins
+1:01:39 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+1:01:39 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+1:01:39 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+1:01:39 PM	4 plugin(s) found!
+1:01:42 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+1:01:42 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+1:01:47 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+1:01:51 PM	Updating Step 'cs_expense_postupdate'
+1:01:54 PM	Registering Image 'Post'
+1:01:56 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+1:01:58 PM	Updating Step 'cs_income_postcreate'
+1:01:59 PM	Registering Image 'Post'
+1:02:00 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+1:02:02 PM	Updating Step 'cs_income_postcreate'
+1:02:03 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+1:02:04 PM	Updating Step 'cs_expense_postcreate'
+1:02:06 PM	Processed 1 config(s)
+1:04:50 PM	Deploying Plugins
+1:04:50 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+1:04:50 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+1:04:50 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+1:04:50 PM	4 plugin(s) found!
+1:04:53 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+1:04:53 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+1:04:56 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+1:04:58 PM	Updating Step 'cs_expense_postupdate'
+1:05:00 PM	Registering Image 'Post'
+1:05:01 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+1:05:02 PM	Updating Step 'cs_income_postcreate'
+1:05:03 PM	Registering Image 'Post'
+1:05:03 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+1:05:04 PM	Updating Step 'cs_income_postcreate'
+1:05:05 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+1:05:06 PM	Updating Step 'cs_expense_postcreate'
+1:05:07 PM	Processed 1 config(s)
+1:07:53 PM	Deploying Plugins
+1:07:53 PM	Searching for plugin config in 'C:\Dev\CoreySutton\BudgetBuster\Plugins\spkl\..'
+1:07:54 PM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\Plugins'
+1:07:54 PM	Checking assembly 'CoreySutton.BudgetBuster.Plugins.dll' for plugins
+1:07:54 PM	4 plugin(s) found!
+1:07:57 PM	Checking for orphaned PluginTypes: 'CoreySutton.BudgetBuster.Plugins' 
+1:07:57 PM	Updating Plugin 'CoreySutton.BudgetBuster.Plugins' from 'C:\Dev\CoreySutton\BudgetBuster\Plugins\bin\Debug\CoreySutton.BudgetBuster.Plugins.dll'
+1:07:58 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postupdate'
+1:07:59 PM	Updating Step 'cs_expense_postupdate'
+1:07:59 PM	Updating Image 'Post'
+1:08:00 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postupdate'
+1:08:00 PM	Updating Step 'cs_income_postcreate'
+1:08:01 PM	Updating Image 'Post'
+1:08:01 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_income_postcreate'
+1:08:01 PM	Updating Step 'cs_income_postcreate'
+1:08:02 PM	Updating Type 'CoreySutton.BudgetBuster.Plugins.cs_expense_postcreate'
+1:08:02 PM	Updating Step 'cs_expense_postcreate'
+1:08:03 PM	Processed 1 config(s)

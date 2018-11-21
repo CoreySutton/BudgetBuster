@@ -13,20 +13,28 @@ namespace CoreySutton.BudgetBuster.Plugins
         executionOrder: 1,
         isolationModel: IsolationModeEnum.Sandbox,
         Description = "Post update events on cs_expense",
-        Image1Name = "Post",
-        Image1Attributes = "cs_budget",
+        Image2Name = "Post",
+        Image2Attributes = "cs_budget",
+        Image2Type = ImageTypeEnum.PostImage,
         Id = "1c71de78-15ed-e811-a96d-000d3ad1c79c"
     )]
     public class cs_expense_postupdate : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)
         {
-            LocalContext ctx = new LocalContext(serviceProvider);
-            cs_expense postExpense = ImageHelper.GetPostImage<cs_expense>(ctx.Context, "Post");
+            try
+            {
+                LocalContext ctx = new LocalContext(serviceProvider);
+                cs_expense postExpense = ImageHelper.GetPostImage<cs_expense>(ctx.Context, "Post");
 
-            var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, postExpense.cs_Budget.Id);
-            budgetUpdateManager.RunActions(new CalculateExpenses(ctx));
-            budgetUpdateManager.Commit();
+                var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, postExpense.cs_Budget.Id);
+                budgetUpdateManager.RunActions(new CalculateExpenses(ctx));
+                budgetUpdateManager.Commit();
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidPluginExecutionException(ex.Message, ex);
+            }
         }
     }
 }

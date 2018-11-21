@@ -1,9 +1,5 @@
 ﻿#if !SCRIPTSHARP
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = true)]
@@ -84,7 +80,7 @@ public class CrmPluginRegistrationAttribute : Attribute
         IsolationMode = isolationModel;
 
     }
-#region Named Properties
+    #region Named Properties
     public string Id { get; set; }
     public string FriendlyName { get; set; }
     public string GroupName { get; set; }
@@ -101,9 +97,9 @@ public class CrmPluginRegistrationAttribute : Attribute
     public ImageTypeEnum Image1Type { get; set; }
     public ImageTypeEnum Image2Type { get; set; }
     public PluginStepOperationEnum? Action { get; set; }
-#endregion
+    #endregion
 
-#region Constructor Mandatory Properties
+    #region Constructor Mandatory Properties
     public IsolationModeEnum IsolationMode { get; private set; }
     public string Message { get; private set; }
     public string EntityLogicalName { get; private set; }
@@ -112,7 +108,7 @@ public class CrmPluginRegistrationAttribute : Attribute
     public int ExecutionOrder { get; private set; }
     public StageEnum? Stage { get; private set; }
     public ExecutionModeEnum ExecutionMode { get; private set; }
-#endregion
+    #endregion
 }
 public enum ExecutionModeEnum
 {
@@ -228,9 +224,9 @@ public enum PluginStepOperationEnum
 }
 public enum StageEnum
 {
-    PreValidation= 10,
+    PreValidation = 10,
     PreOperation = 20,
-    PostOperation =40
+    PostOperation = 40
 }
 
 #endif

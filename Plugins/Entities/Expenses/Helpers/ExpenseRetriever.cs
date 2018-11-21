@@ -10,22 +10,31 @@ namespace CoreySutton.BudgetBuster.Plugins
     {
         private QueryExpression ValuesQuery(Guid budgetId) => new QueryExpression(cs_expense.EntityLogicalName)
         {
-            ColumnSet = new ColumnSet(nameof(cs_expense.cs_Value)),
+            ColumnSet = new ColumnSet(nameof(cs_expense.cs_Value).ToLower()),
             Criteria =
             {
                 Conditions =
                 {
-                    new ConditionExpression(nameof(cs_expense.cs_Budget), ConditionOperator.Equal, budgetId)
+                    new ConditionExpression(nameof(cs_expense.cs_Budget).ToLower(), ConditionOperator.Equal, budgetId)
                 }
             }
         };
 
-        internal ExpenseRetriever(LocalContext ctx) : base(ctx) { }
+        internal ExpenseRetriever(LocalContext ctx) : base(ctx)
+        {
+            Ctx.Tracer.Ctor(nameof(ExpenseRetriever));
+        }
 
         internal List<Money> GetValues(Guid budgetId)
         {
+            Ctx.Tracer.FuncStart(nameof(GetValues));
+
             EntityCollection ec = Ctx.OrgService.RetrieveMultiple(ValuesQuery(budgetId));
-            return ec?.Entities?.Select(e => e.ToEntity<cs_expense>().cs_Value).ToList();
+            List<Money> values = ec?.Entities?.Select(e => e.ToEntity<cs_expense>().cs_Value).ToList();
+
+            Ctx.Tracer.FuncEnd(nameof(GetValues));
+
+            return values;
         }
     }
 }
