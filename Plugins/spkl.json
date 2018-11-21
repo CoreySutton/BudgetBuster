@@ -2,7 +2,8 @@
   "plugins": [
     {
       "profile": "default,debug",
-      "assemblypath": "bin\\Debug"
+      "assemblypath": "bin\\Debug",
+      "solution": "BudgetBlaster"
     }
   ],
   "earlyboundtypes": [
