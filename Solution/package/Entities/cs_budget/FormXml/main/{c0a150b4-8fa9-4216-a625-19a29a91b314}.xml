@@ -7,9 +7,9 @@
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" IsUserDefined="1">
+        <tab verticallayout="true" id="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" IsUserDefined="1" name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" locklevel="0" expanded="true" showlabel="true">
           <labels>
-            <label description="General" languagecode="1033" />
+            <label description="Summary" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
@@ -27,28 +27,166 @@
                         <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" uniqueid="{32b2b1b3-637b-1b8a-271a-47734c4e96ec}" disabled="false" />
                       </cell>
                     </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_3" showlabel="false" showbar="false" locklevel="0" id="{4ccc3761-66c3-5516-96b3-ecc630c2b781}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row>
-                      <cell id="{38930236-2a45-c664-19d4-1a1cb99be87b}" showlabel="true" locklevel="0">
+                      <cell id="{4aa7a646-0396-3adc-c117-c94093ec46dd}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Total Incomes" languagecode="1033" />
+                          <label description="Total Incomes (Annualy)" languagecode="1033" />
                         </labels>
-                        <control id="cs_totalincomes" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomes" disabled="true" uniqueid="{aad3aa44-0c7c-dbd1-82e0-793d1e1d8948}" />
+                        <control id="cs_totalincomesannualy" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesannualy" disabled="true" uniqueid="{b89a2470-23c3-68e4-600c-a792a442b63e}" />
+                      </cell>
+                      <cell id="{d871e387-7c27-ad20-4e79-8ca0e5d127e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Annualy)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesannualy" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesannualy" disabled="true" uniqueid="{36d783cb-5e5b-eb3a-8dd7-a10147012226}" />
+                      </cell>
+                      <cell id="{219e79b0-6821-96c0-202e-4242c52be81e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Annualy)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailableannualy" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailableannualy" disabled="false" />
                       </cell>
                     </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_4" showlabel="false" showbar="false" locklevel="0" id="{537cb542-cd58-2664-e63c-d53cd109a685}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row>
-                      <cell id="{3310ebc9-130a-6858-381a-2e9764d36274}" showlabel="true" locklevel="0">
+                      <cell id="{5a3d1361-5046-73bd-1921-c4a3e831cec0}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Total Expenses" languagecode="1033" />
+                          <label description="Total Incomes (Quaterly)" languagecode="1033" />
                         </labels>
-                        <control id="cs_totalexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpenses" disabled="true" uniqueid="{6de098eb-982c-c7b1-34d0-8a87bee0a225}" />
+                        <control id="cs_totalincomesquaterly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesquaterly" disabled="true" uniqueid="{d53b1318-459d-8ee3-5532-e86978b9ae84}" />
+                      </cell>
+                      <cell id="{97108e86-1381-30ed-8d0a-28073a8b602b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Quaterly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesquaterly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesquaterly" disabled="true" uniqueid="{64d99441-10d6-8c32-e275-c33727c40b16}" />
+                      </cell>
+                      <cell id="{23354a3a-03b7-bd7e-1890-c231d346b3a5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Quaterly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailablequaterly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailablequaterly" disabled="false" />
                       </cell>
                     </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_5" showlabel="false" showbar="false" locklevel="0" id="{1c1701ed-10dd-068a-21d7-acd59585417a}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row>
-                      <cell id="{0ae239a7-7d07-71ee-6967-c079562e7ba6}" showlabel="true" locklevel="0">
+                      <cell id="{20acc1e3-3215-7d23-c515-c24ad89e6eb5}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Total Available" languagecode="1033" />
+                          <label description="Total Incomes (Monthly)" languagecode="1033" />
                         </labels>
-                        <control id="cs_totalavailable" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailable" disabled="false" />
+                        <control id="cs_totalincomesmonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesmonthly" disabled="true" uniqueid="{1e04ea72-7ce3-8a81-93c4-38164d5c7e5c}" />
+                      </cell>
+                      <cell id="{557799e0-6b0c-5295-180c-deb47c19c8e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Monthly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesmonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesmonthly" disabled="true" uniqueid="{b4d23d27-bc0c-82b0-2062-4b874c52a4ee}" />
+                      </cell>
+                      <cell id="{5bca7d5e-1cc8-e7b8-e0be-3b961b45ceae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Monthly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailablemonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailablemonthly" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_6" showlabel="false" showbar="false" locklevel="0" id="{d5e6ab52-b9d9-a494-5a4c-1045686d1c74}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c8ee3ae2-e71a-6303-08b6-28789d1ece37}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Incomes (Fortnightly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalincomesfortnightly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesfortnightly" disabled="true" uniqueid="{d2b65557-aee6-1cea-c2ec-94592ac2c306}" />
+                      </cell>
+                      <cell id="{1600332b-897c-6914-31b8-4d3207745bd7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Fortnightly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesfortnightly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesfortnightly" disabled="true" uniqueid="{21562351-9c8e-2633-d080-a0d6514357a4}" />
+                      </cell>
+                      <cell id="{8858351a-6a48-14e2-d666-c9ce2e5a2961}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Fortnightly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailablefortnightly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailablefortnightly" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_7" showlabel="false" showbar="false" locklevel="0" id="{516b9ac9-3a02-c2a0-d425-e6a4a96b7617}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3721bcd7-4540-b004-99e5-caee15263e94}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Incomes (Weekly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalincomesweekly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesweekly" disabled="true" uniqueid="{e6a3a9a3-9e20-6d68-a591-a200e04e9774}" />
+                      </cell>
+                      <cell id="{d819817a-8484-6769-7a63-39eb9504099c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Weekly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesweekly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesweekly" disabled="true" uniqueid="{41651b20-294a-8dee-162b-5549edbad87a}" />
+                      </cell>
+                      <cell id="{6d451125-1746-3681-b40e-42a05ea11db8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Weekly)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailableweekly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailableweekly" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_8" showlabel="false" showbar="false" locklevel="0" id="{99d3c793-e3ea-6ae9-0e20-4bca63e49c6e}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{74115015-2cdb-3cc4-aea7-96e6e6d2b7ad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Incomes (Daily)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalincomesdaily" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomesdaily" disabled="true" uniqueid="{25ce9c9e-b057-ac3e-9576-3651632bd9ae}" />
+                      </cell>
+                      <cell id="{5c10cd18-55d1-44b7-1bd0-b2e4e10e4512}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Expenses (Daily)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalexpensesdaily" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpensesdaily" disabled="true" uniqueid="{8ce9b9a0-e13c-d615-d465-ae210604a88a}" />
+                      </cell>
+                      <cell id="{956d1eac-0a7a-232e-c82a-a3e037678439}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total Available (Daily)" languagecode="1033" />
+                        </labels>
+                        <control id="cs_totalavailabledaily" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalavailabledaily" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -69,14 +207,6 @@
                     <label description="Expenses" languagecode="1033" />
                   </labels>
                   <rows>
-                    <row>
-                      <cell id="{86074385-64d0-db80-8959-9134c9350d27}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Total Expenses" languagecode="1033" />
-                        </labels>
-                        <control id="cs_totalexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalexpenses" disabled="true" uniqueid="{17c547c0-2556-574c-83be-04d98643e94a}" />
-                      </cell>
-                    </row>
                     <row>
                       <cell id="{4474c79d-1212-9079-dc36-d2cea8352a05}" showlabel="true" colspan="1" rowspan="5" auto="true">
                         <labels>
@@ -125,14 +255,6 @@
                     <label description="Income" languagecode="1033" />
                   </labels>
                   <rows>
-                    <row>
-                      <cell id="{e79b389d-4a19-192d-deee-a8de22737ad2}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Total Incomes" languagecode="1033" />
-                        </labels>
-                        <control id="cs_totalincomes" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="cs_totalincomes" disabled="true" uniqueid="{63be2c2e-d786-2e72-ae38-5387e5b0cebc}" />
-                      </cell>
-                    </row>
                     <row>
                       <cell id="{17bb8651-e048-59cb-4566-c69d77957c15}" showlabel="true" colspan="1" auto="true" rowspan="5">
                         <labels>

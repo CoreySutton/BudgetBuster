@@ -50,7 +50,7 @@
                       </Sequence.Variables>
                       <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;cs_budget&quot;)]" />
                       <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
-                      <mxswa:GetEntityProperty Attribute="cs_totalincomes" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_3]">
+                      <mxswa:GetEntityProperty Attribute="cs_totalincomesmonthly" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_3]">
                         <mxswa:GetEntityProperty.TargetType>
                           <InArgument x:TypeArguments="s:Type">
                             <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
@@ -67,7 +67,7 @@
                           <OutArgument x:TypeArguments="x:Object" x:Key="Result">[SetAttributeValueStep4_2]</OutArgument>
                         </mxswa:ActivityReference.Arguments>
                       </mxswa:ActivityReference>
-                      <mxswa:GetEntityProperty Attribute="cs_totalexpenses" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_5]">
+                      <mxswa:GetEntityProperty Attribute="cs_totalexpensesmonthly" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_5]">
                         <mxswa:GetEntityProperty.TargetType>
                           <InArgument x:TypeArguments="s:Type">
                             <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
@@ -94,7 +94,7 @@
                           <OutArgument x:TypeArguments="x:Object" x:Key="Result">[SetAttributeValueStep4_1]</OutArgument>
                         </mxswa:ActivityReference.Arguments>
                       </mxswa:ActivityReference>
-                      <mxswa:SetEntityProperty Attribute="cs_totalavailable" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_1]">
+                      <mxswa:SetEntityProperty Attribute="cs_totalavailablemonthly" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cs_budget" Value="[SetAttributeValueStep4_1]">
                         <mxswa:SetEntityProperty.TargetType>
                           <InArgument x:TypeArguments="s:Type">
                             <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="mxs:Money" />
