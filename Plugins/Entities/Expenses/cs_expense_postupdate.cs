@@ -28,7 +28,7 @@ namespace CoreySutton.BudgetBuster.Plugins
                 cs_expense postExpense = ImageHelper.GetPostImage<cs_expense>(ctx.Context, "Post");
 
                 var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, postExpense.cs_Budget.Id);
-                budgetUpdateManager.RunActions(new CalculateExpenses(ctx));
+                budgetUpdateManager.RunActions(new SetExpenses(ctx));
                 budgetUpdateManager.Commit();
             }
             catch (Exception ex)

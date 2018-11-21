@@ -12,7 +12,7 @@
       "generateOptionsetEnums": true,
       "generateGlobalOptionsets": true,
       "generateStateEnums": true,
-      "filename": "EarlyBound.cs",
+      "filename": "Core\\EarlyBound.cs",
       "classNamespace": "CoreySutton.BudgetBuster.Plugins",
       "serviceContextName": "XrmSvc",
       "oneTypePerFile": false

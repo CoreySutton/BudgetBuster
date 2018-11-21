@@ -16,6 +16,30 @@ namespace CoreySutton.BudgetBuster.Plugins
 	
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "9.0.0.9154")]
+	public enum cs_period
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Daily = 717640000,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Weekly = 717640001,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Fortnightly = 717640002,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Monthly = 717640003,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Quaterly = 717640004,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		Annualy = 717640005,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "9.0.0.9154")]
 	public enum cr5f8_approvalstatus
 	{
 		
@@ -1909,30 +1933,6 @@ namespace CoreySutton.BudgetBuster.Plugins
 	
 	[System.Runtime.Serialization.DataContractAttribute()]
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "9.0.0.9154")]
-	public enum cs_period
-	{
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Daily = 717640000,
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Weekly = 717640001,
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Fortnightly = 717640002,
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Monthly = 717640003,
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Quaterly = 717640004,
-		
-		[System.Runtime.Serialization.EnumMemberAttribute()]
-		Annualy = 717640005,
-	}
-	
-	[System.Runtime.Serialization.DataContractAttribute()]
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("CrmSvcUtil", "9.0.0.9154")]
 	public enum cs_budgetState
 	{
 		
@@ -2092,84 +2092,360 @@ namespace CoreySutton.BudgetBuster.Plugins
 		/// <summary>
 		/// 
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalavailable")]
-		public Microsoft.Xrm.Sdk.Money cs_TotalAvailable
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesannualy")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesAnnualy
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalavailable");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesannualy");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalExpensesAnnualy");
+				this.SetAttributeValue("cs_totalexpensesannualy", value);
+				this.OnPropertyChanged("cs_TotalExpensesAnnualy");
 			}
 		}
 		
 		/// <summary>
-		/// Value of the Total Available in base currency.
+		/// Value of the Total Expenses (Annualy) in base currency.
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalavailable_base")]
-		public Microsoft.Xrm.Sdk.Money cs_totalavailable_Base
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesannualy_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesannualy_Base
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalavailable_base");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesannualy_base");
 			}
 		}
 		
 		/// <summary>
 		/// 
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpenses")]
-		public Microsoft.Xrm.Sdk.Money cs_TotalExpenses
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesdaily")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesDaily
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpenses");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesdaily");
 			}
 			set
 			{
-				this.OnPropertyChanging("cs_TotalExpenses");
-				this.SetAttributeValue("cs_totalexpenses", value);
-				this.OnPropertyChanged("cs_TotalExpenses");
+				this.OnPropertyChanging("cs_TotalExpensesDaily");
+				this.SetAttributeValue("cs_totalexpensesdaily", value);
+				this.OnPropertyChanged("cs_TotalExpensesDaily");
 			}
 		}
 		
 		/// <summary>
-		/// Value of the Total Expenses in base currency.
+		/// Value of the Total Expenses (Daily) in base currency.
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpenses_base")]
-		public Microsoft.Xrm.Sdk.Money cs_totalexpenses_Base
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesdaily_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesdaily_Base
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpenses_base");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesdaily_base");
 			}
 		}
 		
 		/// <summary>
 		/// 
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomes")]
-		public Microsoft.Xrm.Sdk.Money cs_TotalIncomes
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesfortnightly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesFortnightly
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomes");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesfortnightly");
 			}
 			set
 			{
-				this.OnPropertyChanging("cs_TotalIncomes");
-				this.SetAttributeValue("cs_totalincomes", value);
-				this.OnPropertyChanged("cs_TotalIncomes");
+				this.OnPropertyChanging("cs_TotalExpensesFortnightly");
+				this.SetAttributeValue("cs_totalexpensesfortnightly", value);
+				this.OnPropertyChanged("cs_TotalExpensesFortnightly");
 			}
 		}
 		
 		/// <summary>
-		/// Value of the Total Incomes in base currency.
+		/// Value of the Total Expenses (Fortnightly) in base currency.
 		/// </summary>
-		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomes_base")]
-		public Microsoft.Xrm.Sdk.Money cs_totalincomes_Base
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesfortnightly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesfortnightly_Base
 		{
 			get
 			{
-				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomes_base");
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesfortnightly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesmonthly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesMonthly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesmonthly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalExpensesMonthly");
+				this.SetAttributeValue("cs_totalexpensesmonthly", value);
+				this.OnPropertyChanged("cs_TotalExpensesMonthly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Expenses (Monthly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesmonthly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesmonthly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesmonthly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesquaterly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesQuaterly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesquaterly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalExpensesQuaterly");
+				this.SetAttributeValue("cs_totalexpensesquaterly", value);
+				this.OnPropertyChanged("cs_TotalExpensesQuaterly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Expenses (Quaterly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesquaterly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesquaterly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesquaterly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesweekly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalExpensesWeekly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesweekly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalExpensesWeekly");
+				this.SetAttributeValue("cs_totalexpensesweekly", value);
+				this.OnPropertyChanged("cs_TotalExpensesWeekly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Expenses (Weekly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalexpensesweekly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalexpensesweekly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalexpensesweekly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesannualy")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesAnnualy
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesannualy");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesAnnualy");
+				this.SetAttributeValue("cs_totalincomesannualy", value);
+				this.OnPropertyChanged("cs_TotalIncomesAnnualy");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Annualy) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesannualy_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesannualy_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesannualy_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesdaily")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesDaily
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesdaily");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesDaily");
+				this.SetAttributeValue("cs_totalincomesdaily", value);
+				this.OnPropertyChanged("cs_TotalIncomesDaily");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Daily) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesdaily_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesdaily_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesdaily_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesfortnightly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesFortnightly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesfortnightly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesFortnightly");
+				this.SetAttributeValue("cs_totalincomesfortnightly", value);
+				this.OnPropertyChanged("cs_TotalIncomesFortnightly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Fortnightly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesfortnightly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesfortnightly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesfortnightly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesmonthly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesMonthly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesmonthly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesMonthly");
+				this.SetAttributeValue("cs_totalincomesmonthly", value);
+				this.OnPropertyChanged("cs_TotalIncomesMonthly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Monthly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesmonthly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesmonthly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesmonthly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesquaterly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesQuaterly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesquaterly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesQuaterly");
+				this.SetAttributeValue("cs_totalincomesquaterly", value);
+				this.OnPropertyChanged("cs_TotalIncomesQuaterly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Quaterly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesquaterly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesquaterly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesquaterly_base");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesweekly")]
+		public Microsoft.Xrm.Sdk.Money cs_TotalIncomesWeekly
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesweekly");
+			}
+			set
+			{
+				this.OnPropertyChanging("cs_TotalIncomesWeekly");
+				this.SetAttributeValue("cs_totalincomesweekly", value);
+				this.OnPropertyChanged("cs_TotalIncomesWeekly");
+			}
+		}
+		
+		/// <summary>
+		/// Value of the Total Incomes (Weekly) in base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("cs_totalincomesweekly_base")]
+		public Microsoft.Xrm.Sdk.Money cs_totalincomesweekly_Base
+		{
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.Money>("cs_totalincomesweekly_base");
 			}
 		}
 		

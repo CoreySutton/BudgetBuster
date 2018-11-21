@@ -28,7 +28,7 @@ namespace CoreySutton.BudgetBuster.Plugins
                 cs_income postIncome = ImageHelper.GetPostImage<cs_income>(ctx.Context, "Post");
 
                 var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, postIncome.cs_Budget.Id);
-                budgetUpdateManager.RunActions(new CalculateIncomes(ctx));
+                budgetUpdateManager.RunActions(new SetIncomes(ctx));
                 budgetUpdateManager.Commit();
             }
             catch (Exception ex)

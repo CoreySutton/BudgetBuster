@@ -27,7 +27,7 @@ namespace CoreySutton.BudgetBuster.Plugins
                 ctx.Tracer.TraceEntities(target: targetExpense);
 
                 var budgetUpdateManager = new EntityUpdateManager<cs_budget>(ctx, targetExpense.cs_Budget.Id);
-                budgetUpdateManager.RunActions(new CalculateExpenses(ctx));
+                budgetUpdateManager.RunActions(new SetExpenses(ctx));
                 budgetUpdateManager.Commit();
             }
             catch (Exception ex)
