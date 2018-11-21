@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.Xrm.Sdk;
+﻿using Microsoft.Xrm.Sdk;
 
 namespace CoreySutton.BudgetBuster.Plugins
 {
@@ -14,15 +13,10 @@ namespace CoreySutton.BudgetBuster.Plugins
         {
             Ctx.Tracer.FuncStart(nameof(Execute));
 
-            List<Money> expenseVals = new ExpenseRetriever(Ctx).GetValues(updateBudget.Id);
-            if (expenseVals == null || expenseVals.Count == 0)
-            {
-                updateBudget.cs_TotalExpenses = null;
-            }
-            else
-            {
-                updateBudget.cs_TotalExpenses = MathHelper.Sum(expenseVals);
-            }
+            var rollup = new Rollup(Ctx);
+            rollup.Query = ExpensesQueryBuilder.ValuesOnly(updateBudget.Id);
+            Money expenses = rollup.GetRollupValue(nameof(cs_expense.cs_Value).ToLower());
+            updateBudget.cs_TotalExpenses = expenses;
 
             Ctx.Tracer.FuncEnd(nameof(Execute));
         }

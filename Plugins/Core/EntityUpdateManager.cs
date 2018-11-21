@@ -11,7 +11,6 @@ namespace CoreySutton.BudgetBuster.Plugins
         internal EntityUpdateManager(LocalContext ctx, Guid entityId)
         {
             ctx.Tracer.Ctor(nameof(EntityUpdateManager<TEntity>));
-
             _ctx = ctx;
             _entity = new TEntity
             {
@@ -35,6 +34,7 @@ namespace CoreySutton.BudgetBuster.Plugins
         internal void RunActions(params PluginAction<TEntity>[] pluginActions)
         {
             _ctx.Tracer.FuncStart(nameof(RunActions));
+            _ctx.Tracer.Trace($"Running actions for {new TEntity().LogicalName}");
 
             foreach (PluginAction<TEntity> pluginAction in pluginActions)
             {
@@ -50,7 +50,12 @@ namespace CoreySutton.BudgetBuster.Plugins
 
             if (_entity.Attributes.Count > 1)
             {
-                _ctx.OrgService.Update(_entity);
+                _ctx.OrgService.Update(_entity.ToEntity<Entity>());
+                _ctx.Tracer.Trace("Updated entity");
+            }
+            else
+            {
+                _ctx.Tracer.Trace("Skipped entity");
             }
 
             _ctx.Tracer.FuncEnd(nameof(Commit));

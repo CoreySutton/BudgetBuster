@@ -72,12 +72,13 @@
     <Compile Include="Entities\Budget\Actions\CalculateExpenses.cs" />
     <Compile Include="Entities\Expenses\cs_expense_postcreate.cs" />
     <Compile Include="Entities\Budget\Actions\CalculateIncomes.cs" />
-    <Compile Include="Entities\Income\Helpers\IncomeRetriever.cs" />
-    <Compile Include="Entities\Expenses\Helpers\ExpenseRetriever.cs" />
+    <Compile Include="Entities\Income\Helpers\IncomeQueryBuilder.cs" />
+    <Compile Include="Entities\Expenses\Helpers\ExpensesQueryBuilder.cs" />
     <Compile Include="Core\EntityUpdateManager.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
-    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\MoneyHelper.cs" />
     <Compile Include="Core\LocalContext.cs" />
+    <Compile Include="Helpers\Rollup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
