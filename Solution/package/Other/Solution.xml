@@ -83,9 +83,14 @@
       <RootComponent type="1" schemaName="cs_expensecategory" behavior="0" />
       <RootComponent type="1" schemaName="cs_income" behavior="0" />
       <RootComponent type="1" schemaName="cs_incomecategory" behavior="0" />
+      <RootComponent type="1" schemaName="cs_recurrence" behavior="0" />
+      <RootComponent type="9" schemaName="cs_daysofweek" behavior="0" />
+      <RootComponent type="9" schemaName="cs_months" behavior="0" />
       <RootComponent type="9" schemaName="cs_period" behavior="0" />
+      <RootComponent type="9" schemaName="cs_rounding" behavior="0" />
       <RootComponent type="20" id="{112ae663-6bec-e811-a975-000d3ad1c0d2}" behavior="0" />
       <RootComponent type="60" id="{212d8251-aa6f-4c18-989d-1b73724d6eb7}" behavior="0" />
+      <RootComponent type="60" id="{ac1bc175-9f17-4708-a4c8-f3f98b82a6dc}" behavior="0" />
       <RootComponent type="60" id="{b8f70af4-3401-4884-b148-1e70943e182f}" behavior="0" />
       <RootComponent type="60" id="{c0790353-9f90-4cc8-abba-f724a934262e}" behavior="0" />
       <RootComponent type="60" id="{c0a150b4-8fa9-4216-a625-19a29a91b314}" behavior="0" />
@@ -94,6 +99,10 @@
       <RootComponent type="60" id="{e7bd57f5-ed95-46c8-8783-6aff7cc44518}" behavior="0" />
       <RootComponent type="60" id="{eb756e2a-4e76-45d4-b1d0-84cf79f5f44a}" behavior="0" />
       <RootComponent type="60" id="{ecda9658-db04-49e8-b876-f439dff8d98e}" behavior="0" />
+      <RootComponent type="61" schemaName="cs_/js/cs_bundle.js" behavior="0" />
+      <RootComponent type="61" schemaName="cs_/js/dg.xrmquery.rest.min.js" behavior="0" />
+      <RootComponent type="61" schemaName="cs_/js/dg.xrmquery.web.min.js" behavior="0" />
+      <RootComponent type="61" schemaName="cs_/js/dg.xrmquery.web.promise.min.js" behavior="0" />
       <RootComponent type="62" schemaName="cs_BudgetBlaster" behavior="0" />
       <RootComponent type="80" schemaName="cs_BudgetBlaster" behavior="0" />
       <RootComponent type="91" id="{c7b29276-15ed-e811-a96c-000d3ad1c3af}" schemaName="CoreySutton.BudgetBuster.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00f2450f25781f00" behavior="0" />

@@ -5,9 +5,9 @@
     <IntroducedVersion>0.1.0.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
-        <tab verticallayout="true" id="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" IsUserDefined="1" name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" locklevel="0" expanded="true" showlabel="true">
+        <tab verticallayout="true" id="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}" IsUserDefined="1" name="SummaryTab" locklevel="0" expanded="true" showlabel="true">
           <labels>
             <label description="Summary" languagecode="1033" />
           </labels>
@@ -27,11 +27,19 @@
                         <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" uniqueid="{32b2b1b3-637b-1b8a-271a-47734c4e96ec}" disabled="false" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{e33d71dd-3186-4850-ca92-d37a090bbaea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period" languagecode="1033" />
+                        </labels>
+                        <control id="cs_period" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cs_period" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_3" showlabel="false" showbar="false" locklevel="0" id="{4ccc3761-66c3-5516-96b3-ecc630c2b781}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="AnnualSection" showlabel="true" showbar="true" locklevel="0" id="{4ccc3761-66c3-5516-96b3-ecc630c2b781}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Annual" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -56,9 +64,9 @@
                     </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_4" showlabel="false" showbar="false" locklevel="0" id="{537cb542-cd58-2664-e63c-d53cd109a685}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="QuarterlySection" showlabel="true" showbar="true" locklevel="0" id="{537cb542-cd58-2664-e63c-d53cd109a685}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Quarterly" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -83,9 +91,9 @@
                     </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_5" showlabel="false" showbar="false" locklevel="0" id="{1c1701ed-10dd-068a-21d7-acd59585417a}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="MonthlySection" showlabel="true" showbar="true" locklevel="0" id="{1c1701ed-10dd-068a-21d7-acd59585417a}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Monthly" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -110,9 +118,9 @@
                     </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_6" showlabel="false" showbar="false" locklevel="0" id="{d5e6ab52-b9d9-a494-5a4c-1045686d1c74}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="FortnightlySection" showlabel="true" showbar="true" locklevel="0" id="{d5e6ab52-b9d9-a494-5a4c-1045686d1c74}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Fortnightly" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -137,9 +145,9 @@
                     </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_7" showlabel="false" showbar="false" locklevel="0" id="{516b9ac9-3a02-c2a0-d425-e6a4a96b7617}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="WeeklySection" showlabel="true" showbar="true" locklevel="0" id="{516b9ac9-3a02-c2a0-d425-e6a4a96b7617}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Weekly" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -164,9 +172,9 @@
                     </row>
                   </rows>
                 </section>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_8" showlabel="false" showbar="false" locklevel="0" id="{99d3c793-e3ea-6ae9-0e20-4bca63e49c6e}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115">
+                <section name="DailySection" showlabel="true" showbar="true" locklevel="0" id="{99d3c793-e3ea-6ae9-0e20-4bca63e49c6e}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
-                    <label description="Section" languagecode="1033" />
+                    <label description="Daily" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
@@ -195,14 +203,14 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_2" id="{46cc6013-a1dc-2e25-7cc3-71101cd0adc4}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+        <tab name="ExpensesTab" id="{46cc6013-a1dc-2e25-7cc3-71101cd0adc4}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Expenses" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="{9990da53-b1f9-4eb4-953b-56cb622ebcbb}_section_2" showlabel="false" showbar="false" locklevel="0" id="{364ba6bd-d103-7cb8-9781-0d79dcc5eacd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                <section name="ExpensesSection" showlabel="false" showbar="false" locklevel="0" id="{364ba6bd-d103-7cb8-9781-0d79dcc5eacd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
                   <labels>
                     <label description="Expenses" languagecode="1033" />
                   </labels>
@@ -243,14 +251,14 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_3" id="{4761b66e-7d41-db7d-bbec-8635c5eee161}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+        <tab name="IncomeTab" id="{4761b66e-7d41-db7d-bbec-8635c5eee161}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
           <labels>
             <label description="Income" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{8e0a6eb3-9058-16a2-e562-2308bb54ea5b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
+                <section name="IncomesSection" showlabel="false" showbar="false" locklevel="0" id="{8e0a6eb3-9058-16a2-e562-2308bb54ea5b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" height="auto">
                   <labels>
                     <label description="Income" languagecode="1033" />
                   </labels>
@@ -357,6 +365,16 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="cs_/js/cs_bundle.js" libraryUniqueId="{7538074e-1424-7205-a7dc-5a96e17d50b1}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="BudgetBlaster.cs_budget.OnLoad" libraryName="cs_/js/cs_bundle.js" handlerUniqueId="{6d21e0b4-421e-dcbb-1b31-a262b0ece324}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

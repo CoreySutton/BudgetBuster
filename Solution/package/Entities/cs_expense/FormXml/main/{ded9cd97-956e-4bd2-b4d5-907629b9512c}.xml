@@ -64,6 +64,19 @@
                         <control id="cs_period" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cs_period" disabled="false" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{de24c1bd-e7de-1a37-a6b2-1841138b11e9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{97135cd0-e621-31cd-b38d-7349d3ea5cc0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Recurrence" languagecode="1033" />
+                        </labels>
+                        <control id="cs_recurrence" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cs_recurrence" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

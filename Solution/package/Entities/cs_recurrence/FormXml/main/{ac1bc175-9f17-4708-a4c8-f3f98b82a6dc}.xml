@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{ac1bc175-9f17-4708-a4c8-f3f98b82a6dc}</formid>
+    <IntroducedVersion>0.1.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{ea0d433b-4e50-49c1-b6fd-14332dc92587}" IsUserDefined="1" name="GeneralTab" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ded3d1a1-8e6c-44e7-b22a-20956f09b44c}" name="GeneralSection" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dad44ae7-0477-4c4d-96ee-7f59b346e8d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cs_name" uniqueid="{70ec6445-c526-614b-20e7-8851dc4199ea}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b948dd2-033b-5d97-0be6-e5d0a6e60a3d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="One Off" languagecode="1033" />
+                        </labels>
+                        <control id="cs_oneoff" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="cs_oneoff" disabled="false" uniqueid="{1c34db12-5619-8906-d022-b1470e91db5e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ac369e12-4e4b-74bb-9cee-75a54324ea13}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="One Off Date" languagecode="1033" />
+                        </labels>
+                        <control id="cs_oneoffdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="cs_oneoffdate" disabled="false" uniqueid="{26a5457b-be63-29ad-9abb-7156992cd0ed}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25e71a5c-92b7-7811-360a-d8ae8bd18bed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period" languagecode="1033" />
+                        </labels>
+                        <control id="cs_period" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cs_period" disabled="false" uniqueid="{6798c772-b353-46d3-1195-658bb6a47ced}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="DailyOptionsSection" showlabel="true" showbar="true" locklevel="0" id="{4a7bcd07-62ba-4b73-40b7-d15776851be1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Daily Options" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e1202c7e-52ba-b6c0-de8c-a942937cd4e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Days Of Week" languagecode="1033" />
+                        </labels>
+                        <control id="cs_daysofweek" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cs_daysofweek" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="WeeklyOptionsSection" showlabel="true" showbar="true" locklevel="0" id="{98492041-c8c3-95b7-8464-6ac55dddd176}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Weekly Options" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e6343ce2-4687-e687-eeb2-64056e4a628d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Days Of Week" languagecode="1033" />
+                        </labels>
+                        <control id="cs_daysofweek" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cs_daysofweek" disabled="false" />
+                      </cell>
+                      <cell id="{a6a8e19a-3671-dc91-85c5-6415ae09c432}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Every X Weeks" languagecode="1033" />
+                        </labels>
+                        <control id="cs_everyxweeks" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="cs_everyxweeks" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="MonthlyOptionsSection" showlabel="true" showbar="true" locklevel="0" id="{7a0452a9-82e0-8520-b825-87b5c56d81d1}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Monthly Options" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{391d1452-c87d-a788-3a17-9b7433da2003}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Day" languagecode="1033" />
+                        </labels>
+                        <control id="cs_day" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="cs_day" disabled="false" />
+                      </cell>
+                      <cell id="{8a0ecd60-e91b-e459-e00a-e815083197c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Every X Months" languagecode="1033" />
+                        </labels>
+                        <control id="cs_everyxmonths" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="cs_everyxmonths" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dc068cd3-85e0-b14c-e316-dd42e3d56a5d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Last" languagecode="1033" />
+                        </labels>
+                        <control id="cs_last" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="cs_last" disabled="false" uniqueid="{6d0a35ec-131a-280b-021d-c6b03321b2bc}" />
+                      </cell>
+                      <cell id="{56658604-8830-c68e-d163-bec7349b755e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rounding" languagecode="1033" />
+                        </labels>
+                        <control id="cs_rounding" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cs_rounding" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="AnnualyOptionsSection" showlabel="true" showbar="true" locklevel="0" id="{58e7d331-8395-3a60-d64d-21e3beac6518}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Annualy Options" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{55c3b212-b1b9-b30e-20be-1144d91e0b94}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Day" languagecode="1033" />
+                        </labels>
+                        <control id="cs_day" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="cs_day" disabled="false" />
+                      </cell>
+                      <cell id="{233ac5b0-3654-e458-deab-cd960d9874aa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Month" languagecode="1033" />
+                        </labels>
+                        <control id="cs_month" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cs_month" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dba476ce-e86d-20ba-5aba-192c324c2777}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{daaec015-0979-b524-1848-b675673a7c2b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rounding" languagecode="1033" />
+                        </labels>
+                        <control id="cs_rounding" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="cs_rounding" disabled="false" uniqueid="{00a9acdb-5975-de21-ad21-c1333eeca851}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{de954b84-4b0a-4a65-97d0-f4a7bdfa4548}" columns="111">
+        <rows>
+          <row>
+            <cell id="{8fb29dc0-ff98-4845-86c9-488d79ce91bb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{91b6733e-a81e-2715-1463-dcd33be74d2b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{ed7ee95e-94d3-dd42-47d5-e885e6630c04}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="cs_/js/cs_bundle.js" libraryUniqueId="{7c797472-a356-c226-eac7-ba3071b6ec77}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="BudgetBlaster.cs_recurrence.OnLoad" libraryName="cs_/js/cs_bundle.js" handlerUniqueId="{d0251d30-6031-61c7-d05d-d5a49823e9d1}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

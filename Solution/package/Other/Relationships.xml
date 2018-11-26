@@ -5,10 +5,14 @@
   <EntityRelationship Name="business_unit_cs_expensecategory" />
   <EntityRelationship Name="business_unit_cs_income" />
   <EntityRelationship Name="business_unit_cs_incomecategory" />
+  <EntityRelationship Name="business_unit_cs_recurrence" />
   <EntityRelationship Name="cs_cs_budget_cs_expense_Budget" />
   <EntityRelationship Name="cs_cs_budget_cs_income_Budget" />
+  <EntityRelationship Name="cs_cs_expense_cs_recurrence_Expense" />
   <EntityRelationship Name="cs_cs_expensecategory_cs_expense_ExpenseCategory" />
+  <EntityRelationship Name="cs_cs_income_cs_recurrence_Income" />
   <EntityRelationship Name="cs_cs_incomecategory_cs_income_IncomeCategory" />
+  <EntityRelationship Name="cs_cs_recurrence_cs_expense_Recurrence" />
   <EntityRelationship Name="lk_cs_budget_createdby" />
   <EntityRelationship Name="lk_cs_budget_modifiedby" />
   <EntityRelationship Name="lk_cs_expense_createdby" />
@@ -19,16 +23,20 @@
   <EntityRelationship Name="lk_cs_income_modifiedby" />
   <EntityRelationship Name="lk_cs_incomecategory_createdby" />
   <EntityRelationship Name="lk_cs_incomecategory_modifiedby" />
+  <EntityRelationship Name="lk_cs_recurrence_createdby" />
+  <EntityRelationship Name="lk_cs_recurrence_modifiedby" />
   <EntityRelationship Name="owner_cs_budget" />
   <EntityRelationship Name="owner_cs_expense" />
   <EntityRelationship Name="owner_cs_expensecategory" />
   <EntityRelationship Name="owner_cs_income" />
   <EntityRelationship Name="owner_cs_incomecategory" />
+  <EntityRelationship Name="owner_cs_recurrence" />
   <EntityRelationship Name="team_cs_budget" />
   <EntityRelationship Name="team_cs_expense" />
   <EntityRelationship Name="team_cs_expensecategory" />
   <EntityRelationship Name="team_cs_income" />
   <EntityRelationship Name="team_cs_incomecategory" />
+  <EntityRelationship Name="team_cs_recurrence" />
   <EntityRelationship Name="TransactionCurrency_cs_budget" />
   <EntityRelationship Name="TransactionCurrency_cs_expense" />
   <EntityRelationship Name="TransactionCurrency_cs_income" />
@@ -37,4 +45,5 @@
   <EntityRelationship Name="user_cs_expensecategory" />
   <EntityRelationship Name="user_cs_income" />
   <EntityRelationship Name="user_cs_incomecategory" />
+  <EntityRelationship Name="user_cs_recurrence" />
 </EntityRelationships>
