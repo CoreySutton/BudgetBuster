@@ -49,7 +49,6 @@
     <None Include="App.config" />
     <None Include="bin\coretools\CrmSvcUtil.exe.config" />
     <None Include="bin\coretools\LicenseTerms.docx" />
-    <None Include="dist\js\cs_budget.js.map" />
     <None Include="package.json" />
     <None Include="packages.config" />
     <None Include="spkl.json" />
@@ -73,7 +72,9 @@
     <Content Include="bin\coretools\Microsoft.Xrm.Tooling.Ui.Styles.dll" />
     <Content Include="bin\coretools\Other Redistributable.txt" />
     <Content Include="bin\coretools\SolutionPackager.exe" />
-    <Content Include="dist\js\cs_budget.js" />
+    <Content Include="dist\js\cs_bundle.js" />
+    <Content Include="dist\js\dg.xrmquery.rest.js" />
+    <Content Include="dist\js\dg.xrmquery.rest.min.js" />
     <Content Include="dist\js\dg.xrmquery.web.js" />
     <Content Include="dist\js\dg.xrmquery.web.min.js" />
     <Content Include="dist\js\dg.xrmquery.web.promise.min.js" />
@@ -84,20 +85,15 @@
     <Content Include="XrmDefinitelyTyped\XrmDefinitelyTyped.xml" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\entities\cs_budget\cs_budget.ts" />
+    <TypeScriptCompile Include="src\core\cs_common.ts" />
+    <TypeScriptCompile Include="src\entities\cs_budget.ts" />
+    <TypeScriptCompile Include="src\entities\cs_recurrence.ts" />
+    <TypeScriptCompile Include="src\typings\xrm\context.d.ts" />
+    <TypeScriptCompile Include="src\typings\xrm\dg.xrmquery.rest.d.ts" />
     <TypeScriptCompile Include="src\typings\xrm\dg.xrmquery.web.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\Form\cs_budget\Main\Information.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\Form\cs_budget\Quick\Information.d.ts" />
     <TypeScriptCompile Include="src\typings\xrm\metadata.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\Web\cs_budget.d.ts" />
     <TypeScriptCompile Include="src\typings\xrm\xrm.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\Enum\cs_budget_statecode.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\Enum\cs_budget_statuscode.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\Enum\cs_period.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\Enum\LCID.d.ts" />
     <TypeScriptCompile Include="src\typings\xrm\_internal\sdk.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\web-entities.d.ts" />
-    <TypeScriptCompile Include="src\typings\xrm\_internal\WebResources.d.ts" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

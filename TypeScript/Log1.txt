@@ -1,0 +1,2 @@
+9:32:07 AM	Deploying WebResources
+9:32:07 AM	Using Config 'C:\Dev\CoreySutton\BudgetBuster\packages\spkl.1.0.233-beta\content'

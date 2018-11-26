@@ -1,26 +1,31 @@
 {
     "webresources": [
-      {
-        "profile": "default,debug",
-        "root": "dist",
-        "solution": "BudgetBlaster",
-        "files": [
-          {
-            "uniquename": "cs_/js/cs_budget.js",
-            "file": "js\\cs_budget.js",
-            "description": "Form script for cs_budget"
-          },
-          {
-            "uniquename": "cs_/js/dg.xrmquery.web.min.js",
-            "file": "js\\dg.xrmquery.web.min.js",
-            "description": "XrmDefinitelyTyped script"
-          },
-          {
-            "uniquename": "cs_/js/dg.xrmquery.web.promise.min.js",
-            "file": "js\\dg.xrmquery.web.promise.min.js",
-            "description": "XrmDefinitelyTyped script"
-          }
-        ]
-      }
+        {
+            "profile": "default,debug",
+            "root": "dist",
+            "solution": "BudgetBlaster",
+          "files": [
+            {
+              "uniquename": "cs_/js/cs_bundle.js",
+              "file": "js\\cs_bundle.js",
+              "description": "Form script for Budget Blaster"
+            },
+            {
+              "uniquename": "cs_/js/dg.xrmquery.rest.min.js",
+              "file": "js\\dg.xrmquery.rest.min.js",
+              "description": "XrmDefinitelyTyped script"
+            },
+            {
+              "uniquename": "cs_/js/dg.xrmquery.web.min.js",
+              "file": "js\\dg.xrmquery.web.min.js",
+              "description": "XrmDefinitelyTyped script"
+            },
+            {
+              "uniquename": "cs_/js/dg.xrmquery.web.promise.min.js",
+              "file": "js\\dg.xrmquery.web.promise.min.js",
+              "description": "XrmDefinitelyTyped script"
+            }
+          ]
+        }
     ]
 }

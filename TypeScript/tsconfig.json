@@ -1,17 +1,24 @@
 {
-  "compilerOptions": {
-    "target": "es5", // Compatible with older browsers
-    "module": "umd", // Compatible with both Node.js and browser
-    "moduleResolution": "node", // Tell tsc to look in node_modules for modules
-    "sourceMap": true, // Creates *.js.map files
-    "jsx": "react", // Causes inline XML (JSX code) to be expanded
-    "strict": true, // Strict types, eg. prohibits `var x=0; x=null`
-    "alwaysStrict": true, // Enable JavaScript's "use strict" mode
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "outDir": "dist\\js"
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowJs": false,
+        "noImplicitAny": false,
+        "noEmitOnError": false,
+        "removeComments": true,
+        "sourceMap": false,
+        "declaration": false,
+        "strict": false,
+        "target": "ES5",
+        "types": [],
+        "moduleResolution": "node",
+        "module": "system",
+        "baseUrl": ".",
+        "extendedDiagnostics": true,
+        "paths": {
+            "*": ["./src/typings/*"]
+        },
+        "outFile": "dist\\js\\cs_bundle.js"
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
 }
