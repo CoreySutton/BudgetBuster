@@ -122,19 +122,50 @@
     <Content Include="package\Entities\cs_income\SavedQueries\{d1548fa8-915c-4427-96ac-2c780c3d9f6b}.xml" />
     <Content Include="package\Entities\cs_income\SavedQueries\{da852876-5aec-e811-a975-000d3ad1c0d2}.xml" />
     <Content Include="package\Entities\cs_income\SavedQueries\{ee309a69-54d4-42f2-8cd9-8152f0a08227}.xml" />
+    <Content Include="package\Entities\cs_recurrence\Entity.xml" />
+    <Content Include="package\Entities\cs_recurrence\FormXml\card\{e27013ca-0eee-416e-a4b3-7790cb18f621}.xml" />
+    <Content Include="package\Entities\cs_recurrence\FormXml\main\{ac1bc175-9f17-4708-a4c8-f3f98b82a6dc}.xml" />
+    <Content Include="package\Entities\cs_recurrence\FormXml\quick\{5974bb17-9d3f-4c13-94ae-9ddc9e4a641f}.xml" />
+    <Content Include="package\Entities\cs_recurrence\RibbonDiff.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{0ca28f9f-b0d2-46c0-805c-67db93da7c17}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{66c77dd3-6211-423d-abae-19ee44078772}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{7e025b9c-a423-4334-90c3-5a84e06b7bd4}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{9e5d8d49-31ee-e811-a96c-000d3ad1c598}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{a46a396d-c6c4-4d20-8c8a-0f35c7c766c1}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{c936e4b0-c68f-4450-b658-8fb13a8eb271}.xml" />
+    <Content Include="package\Entities\cs_recurrence\SavedQueries\{d8be2694-0342-4dbd-90ee-a3051e2e0601}.xml" />
+    <Content Include="package\OptionSets\cs_daysofweek.xml" />
+    <Content Include="package\OptionSets\cs_months.xml" />
     <Content Include="package\OptionSets\cs_period.xml" />
+    <Content Include="package\OptionSets\cs_rounding.xml" />
     <Content Include="package\Other\Customizations.xml" />
     <Content Include="package\Other\Relationships.xml" />
     <Content Include="package\Other\Relationships\BusinessUnit.xml" />
     <Content Include="package\Other\Relationships\cs_budget.xml" />
+    <Content Include="package\Other\Relationships\cs_expense.xml" />
     <Content Include="package\Other\Relationships\cs_expensecategory.xml" />
+    <Content Include="package\Other\Relationships\cs_income.xml" />
     <Content Include="package\Other\Relationships\cs_incomecategory.xml" />
+    <Content Include="package\Other\Relationships\cs_recurrence.xml" />
     <Content Include="package\Other\Relationships\Owner.xml" />
     <Content Include="package\Other\Relationships\SystemUser.xml" />
     <Content Include="package\Other\Relationships\Team.xml" />
     <Content Include="package\Other\Relationships\TransactionCurrency.xml" />
     <Content Include="package\Other\Solution.xml" />
+    <Content Include="package\PluginAssemblies\CoreySuttonBudgetBusterPlugins-C7B29276-15ED-E811-A96C-000D3AD1C3AF\CoreySuttonBudgetBusterPlugins.dll.data.xml" />
     <Content Include="package\Roles\Budget Blaster.xml" />
+    <Content Include="package\SdkMessageProcessingSteps\{031e9c7b-15ed-e811-a96a-000d3ad1c715}.xml" />
+    <Content Include="package\SdkMessageProcessingSteps\{1c71de78-15ed-e811-a96d-000d3ad1c79c}.xml" />
+    <Content Include="package\SdkMessageProcessingSteps\{239d3d7b-15ed-e811-a975-000d3ad1c0d2}.xml" />
+    <Content Include="package\SdkMessageProcessingSteps\{af2a4f7a-15ed-e811-a96c-000d3ad1c598}.xml" />
+    <Content Include="package\WebResources\cs_\js\cs_bundle.js" />
+    <Content Include="package\WebResources\cs_\js\cs_bundle.js.data.xml" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.rest.min.js" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.rest.min.js.data.xml" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.web.min.js" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.web.min.js.data.xml" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.web.promise.min.js" />
+    <Content Include="package\WebResources\cs_\js\dg.xrmquery.web.promise.min.js.data.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\coretools\CrmSvcUtil.exe.config" />
@@ -149,7 +180,27 @@
     <Folder Include="bin\Release\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailable.xaml">
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailableannualy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailabledaily.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailablefortnightly.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailablemonthly.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailablequaterly.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="package\Entities\cs_budget\Formulas\cs_budget-cs_totalavailableweekly.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
